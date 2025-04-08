@@ -1,0 +1,10 @@
+{% extends 'base.html'%}
+
+{%block content%}
+    <h1>welcome jinja templates</h1>
+    {%for post in posts%}
+        <h2>{{post.author}}</h2>
+        <p>{{post.age}}</p>
+    {%endfor%}
+
+{%endblock content%}

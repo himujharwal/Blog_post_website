@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap + HTML Only</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar with Links -->
+  <nav class="navbar bg-dark p-3">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <a class="navbar-brand text-white" href="#">MySite</a>
+      
+      <div>
+        <a class="nav-link d-inline text-white me-3" href="#">Home</a>
+        <a class="nav-link d-inline text-white me-3" href="#">About</a>
+        <a class="nav-link d-inline text-white me-3" href="#">Services</a>
+        <a class="nav-link d-inline text-white" href="#">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-4">
+    <div class="row">
+      
+      <!-- Left Column -->
+      <div class="col-md-6">
+        <h2>Welcome to My Flask App</h2>
+        <p class="text-muted">This is a simple responsive layout using Bootstrap 5. No custom CSS, no JavaScript.</p>
+        
+        <!-- Form -->
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Say something..."></textarea>
+          </div>
+          <button class="btn btn-success">Submit</button>
+        </form>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-md-6">
+        <!-- Card -->
+        <div class="card">
+          <img src="https://source.unsplash.com/400x250/?nature" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card Example</h5>
+            <p class="card-text">This is a simple card with an image and a button.</p>
+            <a href="#" class="btn btn-primary">Click Me</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
