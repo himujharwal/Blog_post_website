@@ -11,16 +11,20 @@ app.config['SECRET_KEY']= '15644274b06634631ae8cf766cfd6167'
 
 
 posts = [
-    { 
-        'author':'himanshu',
-         'age': 24,
-         'post':'first post of my about the jinja templates'
+    {   
+        'title': 'what is the API.',
+        'date' : '3 April 2025',
+        'author':'himanshu jharwal',
+        
+        'post':"An API (Application Programming Interface) is a set of rules that allows one software or service to communicate with another.It acts like a messenger that lets apps talk to each other and exchange data or functionality."
+                
 
     }, 
-    { 
-    'author':'kushal',
-        'age': 23,
-        'post':'second post about the frondetend developmendts'
+    { 'title': 'what is flask' ,
+      'date': '5 april 2025',
+      'author':'kushal bharthi',
+        
+      'post':'Flask is a lightweight Python web framework used to build web applications quickly and easily. It’s useful because it’s simple, flexible, and gives you full control to create anything from small projects to complex APIs.'
 
     }
 ]
