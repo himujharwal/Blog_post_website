@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% if title%}
-        <title>{{title}}</title>
-    {%else%}
-        <title>flask blog pos</title>
-    {%endif%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {% if title %}
+        <title>{{ title }}</title>
+    {% else %}
+        <title>Flask Blog Post</title>
+    {% endif %}
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    {%block content%}{%endblock%}
- 
+
+   
+    {% block content %}
+    {% endblock %}
+
+
+    <!-- Bootstrap JS Bundle (for dropdowns, nav collapse, etc.) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
